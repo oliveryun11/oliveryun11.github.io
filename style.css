@@ -1,0 +1,51 @@
+/*
+color scheme:
+Text: #FFFFFF
+Primary: #F15025
+Secondary: #E6E8E6
+Accent: #CED0CE
+Background: #191919
+*/
+
+body {
+    background-color: #191919;
+}
+
+.nav_bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: #CED0CE;
+    height: 40px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: stretch;
+}
+
+.nav_item {
+    display: flex;
+    flex-basis: 100px;
+    align-items: stretch;
+}
+
+
+/*
+.nav_link:hover {
+    background-color: #CED0CE;
+}
+*/
+
+#cur_link {
+    background-color: #F15025;
+}
+
+.nav_link {
+    display: grid;
+    width: 100%;
+    align-items: center;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+}
