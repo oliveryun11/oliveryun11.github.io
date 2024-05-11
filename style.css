@@ -8,15 +8,21 @@ Background: #191919
 */
 
 :root {
-    --text-color: #FFFFFF;
+    --text-color: #000000;
     --primary-color: #F15025;
     --secondary-color: #E6E8E6;
     --accent-color: #CED0CE;
-    --background-color: #191919;
+    --background-color: #F5EBE0;
 }
 
 * {
-    color: var(--text-color)
+    color: var(--text-color);
+    font-family: "Ubuntu Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
 }
 
 
@@ -26,61 +32,53 @@ html, body {
     height: 100%;
 }
 
-.box {
+.page_wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.page {
     display: flex;
     flex-flow: column;
-    height: 100%;
+    width: 50%;
+}
+
+.name {
+    display: grid;
+    flex: 0 1 100px;
+    align-content: center;
+    text-align: center;
+    font-size: 70px;
 }
 
 .nav_bar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    border-bottom: 1px solid var(--accent-color);
-
     flex: 0 1 50px;
 
     display: flex;
-    flex-direction: row;
-    justify-content: right;
-    align-items: stretch;
-}
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 50px;
 
-.nav_item {
-    display: flex;
-    flex-basis: 100px;
-    align-items: stretch;
 }
-
-/*
-.nav_link:hover {
-    background-color: var(--accent-color);
-}
-
-
-#cur_link {
-    background-color: var(--primary-color);
-}
-*/
 
 .nav_link {
-    display: grid;
-    width: 100%;
-    align-items: center;
-    text-align: center;
     text-decoration: none;
 }
 
-.landing {
-    flex: 1 1 auto;
+.img_wrapper {
     display: flex;
-    flex-flow: row;
-    justify-content: space-around;
+    flex: 0 1 400;
+    justify-content: center;
 }
 
-h1, p {
-    display: grid;
-    align-items: center;
+.img_me {
+    flex: 0 1 auto;
+    max-height: 400px;
+    max-width: 400px;
+    min-width: 0;
+    min-height: 0;
 }
 
 .footer {
