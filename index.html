@@ -5,32 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oliver Yun</title>
     <link rel = "stylesheet" href = "style.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class = "page_wrapper">
+    <div id = "landing_wrapper" class = "wrapper">
         <div class = "page">
-            <h1 class = "name">
-                oliver yun
-            </h1>
-            <div class = "nav_bar">
-                <a class = "nav_link" href = "#pass">About Me</a>
-                <a class = "nav_link" href = "#pass">My Projects</a>
-                <a class = "nav_link" href = "#pass">Resume</a>
-            </div>
-            <div class = "img_wrapper">
-                <img class = "img_me" src = "img/me.jpeg" alt = "me!">
-            </div>
-            <div class = "footer">
-                <div class = "socials">
-                    <a href = "#"><i class = "fa fa-linkedin-square" style = "font-size: 50px"></i></a>
-                    <a href = "#"><i class = "fa fa-github" style = "font-size: 50px"></i></a>
-                    <a href = "#"><i class = "fa fa-envelope" style = "font-size: 50px"></i></a>
+            <ul id = "nav">
+                    <li class = "nav_link">Home</li>
+                    <li class = "nav_link">Projects</li>
+                    <li class = "nav_link">About</li>
+                    <li class = "nav_link">Contact</li>
+                    <li class = "nav_link" id = "resume_li"><a id = "resume" href = "index.html">Resume</a></li>
+                </ul>
+            <div id = "landing">
+                <div id = "landing_content">
+                    <div id = "landing_text">
+                        <p class = "landing_text_small">Hey, my name is</p>
+                        <h1 class = "landing_text_large">Oliver Yun</h1>
+                        <p class = "landing_text_small">I'm a</p>
+                    </div>
+                    <div class = "img_mask"><img id = "me!"></div>
                 </div>
-                <small class = "footnote">Copyright &copy; 2024 Oliver Yun</small>
+                <span class = "circle" id = "br"></span>
+                <span class = "circle" id = "tl"></span>
+            </div>
+        </div>
+    </div>
+    <div id = "about_wrapper" class = "wrapper">
+        <div id = "about" class = "page">
+            <div id = "about_text">
+                <h2 class = "outfit">About Me</h2>
+                <div class = "paragraphs">
+                    <p>
+                        Hello! I'm Oliver Tao Yun, a sophomore at Carnegie Mellon University pursuing a B.S. in Statistics and Machine Learning. 
+                        I have a strong passion for solving computational problems, mathematical modeling, and data science, which has driven me 
+                        to excel academically and engage in various research projects.
+                    </p>
+                    <br>
+                    <p>
+                        I’ve had the pleasure of working on an AI network for CAD model generation, Carnegie Mellon University’s first PokerAI 
+                        competition, and a water-level prediction model.
+                    </p>
+                    <br>
+                    <p>
+                        Here are some technologies I’ve most recently worked with:
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id = "projects_wrapper" class = "wrapper">
+        <div id = "projects" class = "page">
+            <div id = "carousel">
+                <h2 id = "projects_text" class = "outfit">My Projects</h2>
+            </div>
+        </div>
+    </div>
+    <div id = "contact_wrapper" class = "wrapper">
+        <div id = "contact" class = "page">
+                <h2 class = "outfit">Contact Me!</h2>
+                <div id = "icons">
+                    <a href = "#"><i class = "fa fa-linkedin-square" style = "font-size: 55px; color: white"></i></a>
+                    <a href = "#"><i class = "fa fa-github" style = "font-size: 55px; color: white"></i></a>
+                    <a href = "#"><i class = "fa fa-envelope" style = "font-size: 55px; color: white"></i></a>
+                </div>
+            <div id = "top">
+                <i class="arrow up"></i>
+                <p id = "top_text">Back to top</p>
             </div>
         </div>
     </div>
