@@ -268,6 +268,7 @@ li a {
     justify-content: center;
     color: white;
     gap: 10px;
+    position: relative;
 }
 
 #icons {
@@ -297,5 +298,11 @@ transform: rotate(-135deg);
     align-items: center;
     flex-direction: column;
     gap: 10px;
+    user-select: none;
 
+}
+
+#footnote {
+    position: absolute;
+    bottom: 2vh;
 }
