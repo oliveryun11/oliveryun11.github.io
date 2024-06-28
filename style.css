@@ -36,7 +36,10 @@ body {
     margin: 0px;
     padding: 0px;
 }
-
+#nav li {
+    z-index: 1;
+    user-select: none;
+}
 .wrapper {
     flex: 0 0 100vh;
     width: 100%;
@@ -53,7 +56,7 @@ body {
 }
 
 #landing {
-    flex: 0 0 100vh;
+    flex: 0 0 100%;
     width: 100%;
     position: relative;
 
@@ -86,11 +89,7 @@ body {
     align-items: center;
 }
 
-#resume_li {
-    flex: 0 0 90px;
-}
-
-#resume {
+li a {
     width: 100%;
     height: 100%;
     
@@ -100,7 +99,13 @@ body {
 
     color: black;
     text-decoration: none;
+}
 
+#resume_li {
+    flex: 0 0 90px;
+}
+
+#resume {
     border-style: solid;
     border-width: 2px;
     border-color: black;
@@ -192,13 +197,62 @@ body {
 #projects_text {
     position: absolute;
     top: -96px;
+    left: 0px;
 }
 
 #carousel{
     flex: 0 0 500px;
     width: 100%;
-    background-color: black;
     position: relative;
+    border-style: solid;
+    border-color: black;
+    border-radius: 1rem;
+    background-color: black;
+}
+
+#slider {
+    display: flex;
+    flex: 1 0 100%;
+    height: 100%;
+    color: white;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#slider div {
+    flex: 1 0 100%;
+    height: 100%;
+    scroll-snap-align: start;
+}
+
+#slider::-webkit-scrollbar {
+    display:none;
+}
+
+.slider-nav  {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav div {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav div:hover {
+    opacity: 1;
 }
 
 #contact_wrapper {
